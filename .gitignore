@@ -1,0 +1,20 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environment
+venv/
+env/
+nlp/
+
+# Ignore dotenv / secrets
+.env
+
+# Ignore all other data / large folders
+data/
+data_operations/
+mimic-iv-ext-direct-1.0.0/
+chunked_docs_embeddings.jsonl
+docs.jsonl
+indexing.py
