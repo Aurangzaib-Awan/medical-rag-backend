@@ -81,7 +81,7 @@ medical-rag-backend/
 ### Prerequisites
 
 - Python 3.9+
-- An OpenAI API key (or compatible LLM provider)
+- A Google AI Studio API key ([get one here](https://aistudio.google.com/app/apikey))
 
 ### Install dependencies
 
@@ -94,23 +94,21 @@ pip install -r requirements.txt
 ### Set environment variables
 
 ```bash
-export OPENAI_API_KEY=your_api_key_here
+export GOOGLE_API_KEY=your_api_key_here
 ```
 
 Or create a `.env` file:
-
 ```
-OPENAI_API_KEY=your_api_key_here
+GOOGLE_API_KEY=your_api_key_here
 ```
 
 ---
 
 ## Usage
 
-### Step 1 — Build the vector index
+### Step 1 — Add your medical documents
 
-Run this once to process your medical documents and create the local index:
-
+Place your PDF or text files in the project root (or a `docs/` folder), then build the vector index:
 ```bash
 python vector.py
 ```
